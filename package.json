@@ -29,9 +29,12 @@
   },
   "dependencies": {
     "@better-scroll/core": "^2.4.2",
+    "babel-polyfill": "^6.26.0",
+    "prop-types": "^15.7.2",
     "react": "^17.0.0",
-    "zarm": "^2.9.7",
-    "babel-polyfill": "^6.26.0"
+    "react-dom": "^17.0.2",
+    "react-transition-group": "^4.4.2",
+    "zarm": "^2.9.7"
   },
   "devDependencies": {
     "@umijs/test": "^3.0.5",

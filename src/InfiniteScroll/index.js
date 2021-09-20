@@ -3,7 +3,7 @@ import BScroll from '@better-scroll/core';
 import Pullup from '@better-scroll/pull-up';
 import { Loading, ActivityIndicator } from 'zarm';
 
-import styles from './style.scss';
+import './style.css';
 
 import Tips from '../Tips';
 
@@ -27,7 +27,7 @@ class InfiniteScroll extends Component {
   }
 
   componentDidMount() {
-    this.bs = new BScroll('#infinite-scroll-wrapper', {
+    this.bs = new BScroll('#tc-infinite-scroll-wrapper', {
       pullUpLoad: true,
       click: true,
     });
@@ -92,7 +92,10 @@ class InfiniteScroll extends Component {
     const { data, hasMore, isEmpty } = this.state;
 
     return (
-      <div id="infinite-scroll-wrapper" className={styles.wrapper}>
+      <div
+        id="tc-infinite-scroll-wrapper"
+        className="tc-infinite-scroll-wrapper"
+      >
         <div>
           {data.map((item) => itemRender(item))}
           {!hasMore && <Tips>没有更多了</Tips>}
